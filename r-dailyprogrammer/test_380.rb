@@ -10,3 +10,10 @@ class TestSmorse < Test::Unit::TestCase
     assert_equal("-.....-...", smorse("three"))
   end
 end
+
+class TestTrie < Test::Unit::TestCase
+  def test_node
+    assert_equal(Trie::Node::Dot, 0)
+    assert_equal(Trie::Node::Dash, 1)
+  end
+end
